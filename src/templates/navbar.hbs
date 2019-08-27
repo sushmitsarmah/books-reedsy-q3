@@ -1,0 +1,18 @@
+<div class="container">
+    <a class="top-logo">{{ logoTitle }}</a>
+    <nav class="top-menu">
+        <ul>
+            {{#each navlist}}
+                {{#if active}}
+                    <li class="active">
+                        <a>{{title}}</a>
+                    </li>
+                {{else}}
+                    <li>
+                        <a>{{title}}</a>
+                    </li>
+                {{/if}}
+            {{/each}}
+        </ul>
+    </nav>
+</div>
